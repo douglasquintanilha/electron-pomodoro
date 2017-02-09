@@ -2,8 +2,8 @@ const {app, BrowserWindow} = require('electron');
 
 app.on('ready', () => {
     let mainWindow = new BrowserWindow({
-        width: 800,
-        height: 600
+        width: 400,
+        height: 250,
     });
 
     mainWindow.loadURL(`file://${__dirname}/app/index.html`);

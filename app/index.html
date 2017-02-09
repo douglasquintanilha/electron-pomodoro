@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Pomodoro App</title>
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-    <h1>Hello, it's me World!</h1>
+    <div class="container center">
+        <h1>Pomodoro App</h1>
+        <div class="clock">00:25:00</div>
+        <a class="waves-effect waves-light btn-large green lighten-2" id="start-button"><i class="material-icons left">alarm_on</i>Start</a>
+        <a class="waves-effect waves-light btn-large red lighten-1" id="stop-button"><i class="material-icons left">alarm_off</i>Stop</a>
+    </div>
+
+    <script>window.$ = window.jQuery = require('./js/jquery-3.1.1.min.js');</script>
+    <script>window.Hammer = require('./js/hammer.min.js');</script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/clock.js" charset="utf-8"></script>
 </body>
 </html>
